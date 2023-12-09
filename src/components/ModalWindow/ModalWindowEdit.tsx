@@ -37,6 +37,11 @@ const ModalWindowEdit: React.FC<ModalWindowEditProps> = ({
     }
   }, [modalWindowStatus]);
 
+  React.useEffect(() => {
+    setName(name);
+    setAddress(address);
+  }, []);
+
   return (
     <div
       ref={ref}
